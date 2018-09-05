@@ -1,0 +1,44 @@
+@echo off
+mode 10
+title DDOS Akbar tampan
+color 0a
+cls
+echo.
+echo ===========================================
+echo		saya ji yang bikin ini bro
+echo		Akbar TAMPAN anak teknik
+echo ===========================================
+echo.
+set /p x=Server Target:
+echo.
+echo ===========================================
+ping %x%
+echo ===========================================
+@ping.exe 127.0.0.1 -n 5 -w 1000 >nul
+goto Next
+:Next
+echo.
+echo.
+set /p n=Ip Adress [Ip Host]:
+echo.
+set /p n=Packet Size:
+echo.
+set /p n=Server Downloads:
+echo.
+set /p n=Messasge To Server Owner:
+echo %ip% Your ip is changed before the attack is started
+echo.
+echo ini adalah ip yang addres yang mau kamu serang toh
+echo Attacking Server %n%
+ping %n% -i %n% -t >nul
+echo Click saja enter
+set /p input=
+color 02
+echo ============================================
+echo					serang
+echo ============================================
+echo
+:DDOS
+echo Attacking Server %n%
+ping %n% -i %n% -t >nul
+goto DDOS
